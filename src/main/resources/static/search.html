@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search — LostLink</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">🔎 LOSTLINK<small>Campus Lost &amp; Found</small></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="search.html" class="active">Search</a>
+        <a href="post.html">Post Found Item</a>
+        <a href="analytics.html">Analytics</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 style="margin-top:24px;">Search Lost Items</h1>
+
+    <div class="filter-bar">
+      <input id="keywordInput" class="search-input" type="text" placeholder="🔍 Search items..." />
+      <select id="categorySelect"></select>
+      <select id="buildingSelect"></select>
+      <input id="floorInput" type="text" placeholder="Floor" style="width:100px;" />
+      <input id="dateInput" type="date" />
+      <button id="applyBtn" class="btn btn-primary">Apply</button>
+      <button id="clearBtn" class="btn btn-outline">Clear Filters</button>
+    </div>
+
+    <div id="feed" class="feed-grid"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
